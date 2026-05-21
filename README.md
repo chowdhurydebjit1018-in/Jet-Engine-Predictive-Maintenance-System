@@ -98,7 +98,7 @@ MIT License
 
 ## 👤 Author
 
-Your Name
+Debjit Chowdhury
 
 ---
 ⭐ Star this repository if you find it useful!
