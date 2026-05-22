@@ -118,6 +118,18 @@ Status Zones:
 - **Plotly** - Visualizations
 - **NumPy/Pandas** - Data manipulation
 
+
+## 📊 Component Specifications
+
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Data Processing** | Pandas, NumPy, SciPy | Load, clean, transform sensor data |
+| **Model Training** | TensorFlow 2.13, Keras | CNN-LSTM training |
+| **Dashboard** | Streamlit 1.28 | Interactive visualization |
+| **Visualization** | Plotly, Matplotlib | Charts and graphs |
+| **Deployment** | Hugging Face Spaces/Streamlit | Live demo hosting |
+| **Version Control** | GitHub | Code management |
+
 ## 📝 License
 
 MIT License
