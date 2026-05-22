@@ -28,13 +28,18 @@ streamlit run app.py
 
 | Metric | Value | Benchmark |
 |--------|-------|-----------|
-| **RMSE** | **12.74 cycles** | LSTM: 14.93 |
-| **MAE** | **9.92 cycles** | LSTM: ~12.50  |
-| **R² Score** | **0.887** | Baseline: 0.85 |
+| **RMSE** | **11.40 cycles** | LSTM: 14.93 |
+| **MAE** | **8.90 cycles** | LSTM: ~12.50  |
+| **R² Score** | **0.910** | Baseline: 0.85 |
 | **Binary Accuracy** | **95.00%** | 85% (Industry) |
 | **Precision (Failure)** | **92%** | 80% (Industry) |
 | **Recall (Failure)** | **88%** | 85% (Industry) |
 | **F1-Score** | **0.90** | 0.82 (Industry) |
+| **Bias** | **-1.14 cycles** |-|
+
+Perfect Prediction : Actual: 100 → Predicted: 100 (Bias = 0)
+
+My Model : Actual: 100 → Predicted: 98.9 (Bias = -1.14)
 
 ### Confusion Matrix (30-Day Failure Prediction)
 
