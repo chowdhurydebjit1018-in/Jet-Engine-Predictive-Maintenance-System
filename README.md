@@ -9,7 +9,7 @@
 This project implements a **Predictive Maintenance System** for aircraft jet engines using the NASA CMAPSS dataset.
 
 ### 📊 Key Results
-- **RMSE**: 14.25 cycles (beats LSTM baseline of 14.93)
+- **RMSE**: 11.40 cycles (beats LSTM baseline of 14.93)
 - **Binary Accuracy**: 95% for 30-day failure prediction
 - **Model**: CNN-LSTM Hybrid Network
 
