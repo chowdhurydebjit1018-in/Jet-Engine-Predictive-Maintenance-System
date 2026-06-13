@@ -1,0 +1,128 @@
+:root {
+  /* Color Palette */
+  --bg-primary: #F8F6FB;
+  --bg-light-lavender: #F3F0F8;
+  --hero-glow: #EAE5F6;
+  
+  /* Accent Colors */
+  --accent-purple: #6B5BFF;
+  --accent-orange: #F37A32;
+  --accent-green: #B8E76A;
+  --accent-pink: #FF7CB5;
+  --accent-yellow: #FFD463;
+
+  /* Text Colors */
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --text-muted: #8A8A8A;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  /* Spacing */
+  --container-width: 1280px;
+  --section-padding: 120px;
+  --card-gap: 24px;
+  --content-gap: 32px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Glassmorphism Utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Base element animations */
+.hero-headline, .dashboard-title {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.hero-description, .dashboard-subtitle {
+  animation: fadeUp 0.8s ease-out 0.2s forwards;
+  opacity: 0; /* start invisible for delay */
+}
+
+.hero-actions, .stat-card {
+  animation: fadeUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.chart-card {
+  animation: fadeUp 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+/* Make glass cards float on hover */
+.glass-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
